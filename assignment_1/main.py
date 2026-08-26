@@ -10,7 +10,7 @@ def print_image_information(image):
 
 
 def main():
-    image = cv2.imread("iris-1.jpg")
+    image = cv2.imread("assignment_1/images/iris-1.jpg")
     print_image_information(image)
     
 if __name__ == "__main__":
