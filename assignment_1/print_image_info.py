@@ -7,7 +7,7 @@ def print_image_information(image):
     print(f"Channels: {Channels}")
     print(f"Size: {image.size}")
     print(f"Data type: {image.dtype}")
-
+    
 
 def main():
     image = cv2.imread("assignment_1/images/iris-1.jpg")

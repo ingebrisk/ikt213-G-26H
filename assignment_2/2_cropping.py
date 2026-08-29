@@ -1,14 +1,9 @@
 import cv2
 import numpy as np
 
-def crop(image):
+def crop(image, x_0, x_1, y_0, y_1):
     # Cut the image such that it returns only the part of the image which is of interest
     print("Running function: cropping()")
-    
-    x_0 = 200
-    y_0 = 200
-    x_1 = 800 - 130     # width: 800, from assignment 1 
-    y_1 = 600 - 130     # hight: 600, from assignment 1 
     
     cropped_image = image[y_0:y_1, x_0:x_1]
     
@@ -23,7 +18,13 @@ def crop(image):
 
 def main():
     image = cv2.imread("assignment_2/images/iris.png")
-    crop(image)
+    
+    x_0 = 200
+    y_0 = 200
+    x_1 = 800 - 130     # width: 800, from assignment 1 
+    y_1 = 600 - 130     # hight: 600, from assignment 1
+    
+    crop(image, x_0, x_1, y_0, y_1)
     
     
 if __name__ == "__main__":

@@ -3,11 +3,9 @@ import numpy as np
 from matplotlib import pyplot as plt
 #1. Padding: Create a border around the original image which reflects the edges of the original image
 
-def padding(image):
+def padding(image, border_width):
     # make paddings to images
     print("running function: padding()")
-    
-    border_width = 100 
     
     reflect = cv2.copyMakeBorder(image,border_width,border_width,border_width,border_width,cv2.BORDER_REFLECT)
     
@@ -21,7 +19,8 @@ def padding(image):
     
 def main():
     image = cv2.imread("assignment_2/images/iris.png")
-    padding(image)
+    border_width = 100 
+    padding(image, border_width)
 
 
 

@@ -10,4 +10,8 @@ To do this, the documentation from ![LearOpenCV](https://learnopencv.com/croppin
 
 ## Resize
 **Create a function which lets you resize the image**
+The dcumentation from ![geeks for geeks](https://www.geeksforgeeks.org/python/image-resizing-using-opencv-python/) was followed to do this task. 
+
+## Manual Copy
+**use what we learned in Lab 1 to get the width, height, and channels, and create a new empty array with**
 
