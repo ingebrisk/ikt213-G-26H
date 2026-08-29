@@ -14,4 +14,13 @@ The dcumentation from ![geeks for geeks](https://www.geeksforgeeks.org/python/im
 
 ## Manual Copy
 **use what we learned in Lab 1 to get the width, height, and channels, and create a new empty array with**
+When Copying an image manually with arrays we copy pixel by pixel with help of three for loops since each pixel hase a hight position, with position and a color value (channel). 
 
+
+## Grayscale: 
+**Convert the colored image to a grayscale image.**
+Following the documentation from ![techtutorialsx](https://techtutorialsx.com/2018/06/02/python-opencv-converting-an-image-to-gray-scale/) to convert given image into black and white colored photo. 
+
+## HSV
+**Convert an RGB image to use HSV**
+HSV stands for Hue Saturation and Value. To convert the image from RGB to HSV the documentation from ![techtutorialsx](https://techtutorialsx.com/2019/11/08/python-opencv-converting-image-to-hsv/) was used. 
