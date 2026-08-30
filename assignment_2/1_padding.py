@@ -1,5 +1,4 @@
 import cv2
-import numpy as np
 from matplotlib import pyplot as plt
 #1. Padding: Create a border around the original image which reflects the edges of the original image
 

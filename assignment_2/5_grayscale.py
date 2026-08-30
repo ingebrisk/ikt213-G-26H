@@ -1,6 +1,5 @@
 import cv2
 
-
 def grayscale(image):
     print("Running function: grayscale()")
     	

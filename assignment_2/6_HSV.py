@@ -1,6 +1,5 @@
 import cv2
 
-
 def hsv(image):
     print("Running function: hsv()")
     	
@@ -16,8 +15,5 @@ def main():
     image = cv2.imread("assignment_2/images/iris.png")
     hsv(image)
 
-
 if __name__ == "__main__":
     main()
-
-

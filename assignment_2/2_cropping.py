@@ -1,5 +1,4 @@
 import cv2
-import numpy as np
 
 def crop(image, x_0, x_1, y_0, y_1):
     # Cut the image such that it returns only the part of the image which is of interest
