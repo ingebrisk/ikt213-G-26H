@@ -13,5 +13,8 @@ Simmelar to **Soble edge detection** ![learnopencv](https://learnopencv.com/edge
 *Your task is, for a given image and template, you must locate any segment of the image that matches what is given from the template*
 To do this task the documentation from ![openCV-pyhton Tutorials](https://opencv24-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html) was used as guidense. 
 
+## resize 
+*Your task is to "zoom in/out" a given image using image pyramids*
+![openCV own documentation](https://docs.opencv.org/4.5.1/d4/d1f/tutorial_pyramids.html)
 
 
