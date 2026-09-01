@@ -9,25 +9,11 @@ def hue_shifted(image,emptyPictureArray, hue):
             for w in range(width):
                 for c in range(channels):
                     
-                    emptyPictureArray[h,w,c] = image[h,w,c]
-   
+                    emptyPictureArray[h, w, c] = (int(image[h, w, c]) + hue) % 256
     
-    image_hsv = cv2.cvtColor(emptyPictureArray, cv2.COLOR_BGR2HSV)
+    cv2.imshow("hue changed photo", emptyPictureArray)
     
-    hue = image_hsv[:,:,0]
-    
-    hue += 50
-    
-    cond = hue[:, :] > 180
-    hue[cond] = hue[cond] - 180
-    
-    image_hsv[:,:,0] = hue
-    
-    colorshifted_image = cv2.cvtColor(image_hsv, cv2.COLOR_HSV2BGR)
-    
-    cv2.imshow("hue changed photo", colorshifted_image)
-    
-    cv2.imwrite("assignment_2/solution/images/7_color_shifting_image.png", colorshifted_image)
+    cv2.imwrite("assignment_2/solution/images/7_color_shifting_image.png", emptyPictureArray)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     
